@@ -13,37 +13,37 @@ const features = [
     icon: Bell,
     title: "Alertas Instantâneos",
     description: "Envie alertas de emergência para seus contatos de confiança com apenas um toque ou comando de voz.",
-    color: "text-accent",
+    color: "text-primary",
   },
   {
     icon: MapPin,
     title: "Localização em Tempo Real",
     description: "Seus contatos recebem sua localização GPS atualizada automaticamente durante emergências.",
-    color: "text-primary",
+    color: "text-accent",
   },
   {
     icon: Mic,
     title: "Ativação por Voz",
     description: "Ative alertas usando comandos de voz, perfeito para situações onde não é possível usar as mãos.",
-    color: "text-secondary",
+    color: "text-primary",
   },
   {
     icon: Users,
     title: "Mapa Colaborativo",
     description: "Compartilhe e visualize ocorrências de segurança relatadas pela sua comunidade.",
-    color: "text-accent",
+    color: "text-secondary",
   },
   {
     icon: Zap,
     title: "Notificações Push & SMS",
     description: "Garanta que seus alertas cheguem mesmo com conexão limitada através de múltiplos canais.",
-    color: "text-primary",
+    color: "text-accent",
   },
   {
     icon: MessageSquare,
     title: "Relatos da Comunidade",
     description: "Registre ocorrências com texto, imagens ou áudio e ajude a manter sua região mais segura.",
-    color: "text-secondary",
+    color: "text-primary",
   },
 ];
 
@@ -64,11 +64,11 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="bg-gradient-card border-0 shadow-soft hover:shadow-strong transition-all duration-300 hover:-translate-y-1 animate-fade-in"
+              className="bg-gradient-card border border-border/50 shadow-soft hover:shadow-red hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
-                <div className={`w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 ${feature.color}`}>
+                <div className={`w-14 h-14 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 shadow-soft group-hover:shadow-glow transition-all duration-300 ${feature.color}`}>
                   <feature.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>

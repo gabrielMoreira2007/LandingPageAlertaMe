@@ -33,9 +33,9 @@ const CommunitySection = () => {
 
           {/* Text content */}
           <div className="animate-fade-in order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 bg-secondary/10 rounded-full px-4 py-2 mb-6 border border-secondary/20">
-              <MapPin className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-secondary">Mapa Colaborativo</span>
+            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 border border-primary/20">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">Mapa Colaborativo</span>
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -86,7 +86,7 @@ const CommunitySection = () => {
 
             <Button 
               size="lg" 
-              className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-soft"
+              className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-soft hover:shadow-red transition-all duration-300 hover:scale-105"
             >
               Explorar o Mapa
             </Button>

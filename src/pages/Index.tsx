@@ -4,10 +4,12 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import CommunitySection from "@/components/CommunitySection";
 import DownloadSection from "@/components/DownloadSection";
 import Footer from "@/components/Footer";
+import CursorEffect from "@/components/CursorEffect";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <CursorEffect />
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />

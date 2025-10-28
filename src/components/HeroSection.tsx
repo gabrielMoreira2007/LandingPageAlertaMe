@@ -7,8 +7,9 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-2xl animate-pulse"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -31,7 +32,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-glow animate-pulse-glow"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 shadow-red hover:shadow-glow transition-all duration-300 hover:scale-105"
               >
                 Baixar Agora
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -40,7 +41,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6"
+                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:border-white/50 text-lg px-8 py-6 transition-all duration-300"
               >
                 Saiba Mais
               </Button>

@@ -23,7 +23,7 @@ const DownloadSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-strong group"
+              className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
             >
               <Apple className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
               App Store
@@ -31,7 +31,7 @@ const DownloadSection = () => {
             
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-strong group"
+              className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
             >
               <Smartphone className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
               Google Play
