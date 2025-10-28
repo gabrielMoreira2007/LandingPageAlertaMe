@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, ArrowRight } from "lucide-react";
-import heroPhone from "@/assets/hero-phone.png";
+import logoAlertaMe from "@/assets/logo_alertaMe.png"; // Sua imagem
 
 const HeroSection = () => {
   return (
@@ -47,7 +47,8 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-8">
+            {/* Div das estatísticas */}
+            <div className="mt-10 flex flex-wrap gap-8 items-center">
               <div>
                 <div className="text-3xl font-bold">24/7</div>
                 <div className="text-white/80 text-sm">Disponibilidade</div>
@@ -60,30 +61,31 @@ const HeroSection = () => {
                 <div className="text-3xl font-bold">99%</div>
                 <div className="text-white/80 text-sm">Uptime</div>
               </div>
+              
+              {/* Card de alerta */}
+              <div className="bg-white rounded-2xl p-4 shadow-strong animate-fade-in text-black"> 
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center">
+                    <ShieldCheck className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm">Alerta Enviado</div>
+                    <div className="text-xs text-gray-700">Em 2.3s</div> 
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Phone mockup */}
-          <div className="relative animate-fade-in lg:animate-slide-in">
-            <div className="relative z-10">
+          {/* Seção da imagem logo_alertaMe.png DENTRO DE UM CARD */}
+          <div className="relative animate-fade-in lg:animate-slide-in flex justify-center lg:justify-end items-center p-4">
+            {/* Card ajustado — esticado horizontalmente, sem mudar o tamanho da imagem */}
+            <div className="bg-white rounded-3xl p-8 shadow-strong w-[110%] max-w-sm lg:-translate-x-10 transition-all duration-500">
               <img 
-                src={heroPhone} 
-                alt="AlertaMe App Interface" 
-                className="w-full max-w-lg mx-auto drop-shadow-2xl"
+                src={logoAlertaMe} 
+                alt="Logo AlertaMe" 
+                className="w-full h-auto object-contain" 
               />
-            </div>
-            
-            {/* Floating badges */}
-            <div className="absolute top-10 -left-4 bg-white rounded-2xl p-4 shadow-strong animate-fade-in">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center">
-                  <ShieldCheck className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <div className="font-bold text-sm">Alerta Enviado</div>
-                  <div className="text-xs text-muted-foreground">Em 2.3s</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
