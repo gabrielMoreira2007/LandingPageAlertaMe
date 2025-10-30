@@ -50,15 +50,15 @@ const HeroSection = () => {
             {/* Div das estatísticas */}
             <div className="mt-10 flex flex-wrap gap-8 items-center">
               <div>
-                <div className="text-3xl font-bold">24/7</div>
+                <div className="text-3xl font-bold">Sempre Ativo</div>
                 <div className="text-white/80 text-sm">Disponibilidade</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">&lt;3s</div>
+                <div className="text-3xl font-bold">Alerta Instantâneo</div>
                 <div className="text-white/80 text-sm">Tempo de Resposta</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">99%</div>
+                <div className="text-3xl font-bold">Confiabilidade Total</div>
                 <div className="text-white/80 text-sm">Uptime</div>
               </div>
               
