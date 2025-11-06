@@ -17,8 +17,8 @@ const CommunitySection = () => {
               />
             </div>
 
-            {/* Floating stats */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-strong animate-fade-in">
+            {/* Floating stats - Adicionado z-20 aqui para ficar por cima do mapa */}
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-strong animate-fade-in z-20"> 
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-gradient-accent rounded-xl flex items-center justify-center">
                   <TrendingUp className="w-7 h-7 text-white" />
@@ -59,9 +59,10 @@ const CommunitySection = () => {
                 </div>
               </div>
 
+              {/* Tópico alterado para usar bg-primary/10 e text-primary */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                  <Camera className="w-6 h-6 text-secondary" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Camera className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Evidências Visuais</h3>
