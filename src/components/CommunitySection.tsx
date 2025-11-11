@@ -24,7 +24,7 @@ const CommunitySection = () => {
                   <TrendingUp className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold">+45%</div>
+                  <div className="text-2xl font-bold">+55%</div>
                   <div className="text-sm text-muted-foreground">Mais seguro</div>
                 </div>
               </div>

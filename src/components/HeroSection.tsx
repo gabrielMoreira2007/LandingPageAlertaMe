@@ -30,21 +30,35 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 shadow-red hover:shadow-glow transition-all duration-300 hover:scale-105"
+              {/* Botão Baixar Agora */}
+              <a 
+                href="https://play.google.com/store/games?hl=en" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                Baixar Agora
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:border-white/50 text-lg px-8 py-6 transition-all duration-300"
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 shadow-red hover:shadow-glow transition-all duration-300 hover:scale-105"
+                >
+                  Baixar Agora
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </a>
+
+              {/* Botão Saiba Mais */}
+              <a 
+                href="https://www.canva.com/design/DAGyoMuAAlc/Ajr1x4bubHW_ihAmz2xvvw/edit?utm_content=DAGyoMuAAlc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                Saiba Mais
-              </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:border-white/50 text-lg px-8 py-6 transition-all duration-300"
+                >
+                  Saiba Mais
+                </Button>
+              </a>
             </div>
 
             {/* Div das estatísticas */}

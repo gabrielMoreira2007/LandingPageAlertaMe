@@ -21,21 +21,35 @@ const DownloadSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
+            {/* Botão App Store */}
+            <a 
+              href="https://www.apple.com/br/app-store/" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              <Apple className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
-              App Store
-            </Button>
-            
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
+              >
+                <Apple className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
+                App Store
+              </Button>
+            </a>
+
+            {/* Botão Google Play */}
+            <a 
+              href="https://play.google.com/store/games?hl=en" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              <Smartphone className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
-              Google Play
-            </Button>
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 hover:shadow-red text-lg px-8 py-6 shadow-strong transition-all duration-300 hover:scale-105 group"
+              >
+                <Smartphone className="mr-2 w-6 h-6 group-hover:scale-110 transition-transform" />
+                Google Play
+              </Button>
+            </a>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 pt-12 border-t border-white/20">
